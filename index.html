@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Die Linke – Ortsverband Ried</title>
+  <meta name="description" content="Die Linke Ortsverband Ried im Kreis Bergstraße – Termine, Kontakt und Mitmachen">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Die Linke – Ortsverband Ried">
+  <meta property="og:description" content="Neu gegründet – Mach mit und gestalte Politik im Kreis Bergstraße!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ried.kreis-bergstrasse.de">
+  <meta property="og:image" content="https://ried.kreis-bergstrasse.de/og-image.jpg">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- FullCalendar CSS via CDN -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.css"
+        integrity="sha512-GfrKaS+faNXwYj06/lzP7P0QgjzdVhhrQdppRT5QF8XpQd2jPzQ8daLqv2RXDLbLrFeD8Xp+oO2U4+nbRfTNog=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Eigene Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">Über uns</a></li>
+      <li><a href="#events">Termine</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <img src="logo-linke.svg" alt="Logo Die Linke" class="logo">
+    <h1>Die Linke – Ortsverband Ried</h1>
+    <p>Neu gegründet – Mach mit und gestalte Politik im Kreis Bergstraße!</p>
+    <a href="#contact" class="btn">Kontakt aufnehmen</a>
+  </header>
+
+  <!-- Über uns -->
+  <section id="about">
+    <h2>Über uns</h2>
+    <p>Der Ortsverband Ried befindet sich im Aufbau. Unser Ziel ist es, soziale Gerechtigkeit und demokratische Teilhabe im Kreis Bergstraße zu stärken.</p>
+    <a href="https://www.die-linke.de/beitritt/" class="btn">Mitglied werden</a>
+  </section>
+
+  <!-- Termine -->
+  <section id="events">
+    <h2>Termine</h2>
+    <div id="calendar"></div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact">
+    <h2>Kontakt</h2>
+    <p><strong>Vorsitzende(r):</strong> Max Mustermann</p>
+    <p><strong>E-Mail:</strong> <a href="mailto:kontakt@ried.kreis-bergstrasse.de">kontakt@ried.kreis-bergstrasse.de</a></p>
+    <p><strong>Telefon:</strong> <a href="tel:+491234567890">+49 1234 567890</a></p>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook"><img src="icon-facebook.svg" alt="Facebook"></a>
+      <a href="#" aria-label="Instagram"><img src="icon-instagram.svg" alt="Instagram"></a>
+      <a href="#" aria-label="X (Twitter)"><img src="icon-twitter.svg" alt="X"></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Die Linke – Ortsverband Ried</p>
+    <nav>
+      <a href="https://kreis-bergstrasse.die-linke-hessen.de/impressum/">Impressum</a> |
+      <a href="https://kreis-bergstrasse.die-linke-hessen.de/datenschutz/">Datenschutz</a>
+    </nav>
+  </footer>
+
+  <!-- JS-Bibliotheken -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/2.2.0/ical.min.js"
+    integrity="sha512-1jJ8YjXVNM27k7hOSjfgXnQMTN+CmlgC0VJpBb+X/ZdXEZ7i3ULQGxKaxwOwgVn0PJY50DwQV1ERBM63dd/Ivg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.js"
+    integrity="sha512-nLNy9hSrjqqYCx2Dzvv+f6e/i1xfFxEQAePTxxmsbJQnwbBbkT80t/zyD1QuQmpLNrQJZTLty6+wKBcX9cwRtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Eigene Skripte -->
+  <script src="script.js"></script>
+</body>
+</html>
