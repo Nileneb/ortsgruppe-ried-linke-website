@@ -1,0 +1,120 @@
+/* style.css */
+:root {
+  --primary:   #E3000F;
+  --secondary: #FFFFFF;
+  --text:      #333333;
+  --bg:        #F5F5F5;
+}
+
+* {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  scroll-behavior: smooth;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* Navbar */
+.navbar {
+  background: var(--secondary);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.navbar li {
+  margin: 0 1rem;
+}
+.navbar a {
+  font-weight: bold;
+}
+
+/* Hero */
+#hero {
+  background: var(--primary);
+  color: var(--secondary);
+  text-align: center;
+  padding: 6rem 1rem;
+}
+.logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto 1rem;
+}
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+#hero p {
+  margin-bottom: 1rem;
+}
+.btn {
+  background: var(--secondary);
+  color: var(--primary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+}
+
+/* Sections */
+section {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+section:nth-of-type(even) {
+  background: var(--secondary);
+}
+section h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Kalender */
+#calendar {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Kontakt */
+.social-icons {
+  margin-top: 1rem;
+}
+.social-icons img {
+  width: 32px;
+  margin: 0 0.5rem;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+footer nav a {
+  color: #ccc;
+  margin: 0 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+  }
+}
